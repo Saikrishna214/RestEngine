@@ -1,0 +1,7 @@
+Test case Title,Url,Method,Status.Reson,Input Data ,Expected Data,Test result,Log
+List Users,/api/users,Get,200,NONE,List Of users,,
+Single User Details,/api/users/2,Get,200,User Name,Details of User,,
+User Not Found,/api/users/23,Get,404,User Name,No Content,,
+Create User,/api/users,Post,201,"{""name"": ""morpheus""""job"":""leader""}",User Name/URI,,
+Update User,/api/users/2,Put,200,"{""name"": ""morpheus""""job"":""zion resident""}",User Name/URI,,
+Delete User,/api/users/2,Delete,204,User Name,No Content,,
